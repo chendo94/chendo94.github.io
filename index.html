@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shito Morales y su Grupo Tóxico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <h1>Espérate a la semana, no seas terco, así no te rinde el dinero</h1>
+        </div>
+        <div class="login">
+            <h2>Iniciar Sesión</h2>
+            <input type="tel" id="phone" placeholder="Número de Teléfono">
+            <input type="password" id="password" placeholder="Clave">
+            <button onclick="login()">Ingresar</button>
+        </div>
+        <div class="register hidden">
+            <h2>Registrar Pago Adelantado</h2>
+            <input type="date" id="date">
+            <input type="text" id="location" placeholder="Lugar del Evento">
+            <input type="number" id="amount" placeholder="Monto">
+            <button onclick="registerPayment()">Registrar</button>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
